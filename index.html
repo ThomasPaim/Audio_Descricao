@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+<meta charset="UTF-8">
+<title>Transcrição de Áudio</title>
+
+<!-- estilos CSS para a página -->
+<style>
+  body { font-family: Arial, sans-serif; height: 100vh;}
+  #transcription { white-space: pre-wrap; }
+
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #121211;
+    margin: 0;
+    width: 100%;
+  }
+
+  main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    height: 80%;
+    
+  }
+
+  #section-links{
+     padding: 10px;
+    background-color: #333;
+    
+  }
+
+  .containers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  ul li{
+    list-style: none;
+  }
+
+  ul li a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  ul li a:hover{
+   text-decoration: underline;
+  }
+
+  #buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #444;
+    padding: 10px;
+  }
+
+  #buttons button{
+     padding: 5px 15px;
+     cursor: pointer;
+     border-radius: 5px;
+     border: none;
+  }
+
+  #button-colors{
+    display: flex;
+    gap: 1rem;
+  }
+
+
+  .section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    
+  }
+
+  .section-container button{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: bolder;
+    font-size: 18px;
+    
+  }
+
+  .containers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #191815;
+    padding: 5px;
+    max-width: 500px;
+  }
+
+  .containers a{
+    text-decoration: none;
+    color: #121211;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+
+  }
+
+
+  .containers p{
+    max-width: 450px;
+  }
+  
+  .containers img{
+    width: 300px;
+  }
+
+  .image{
+    width: 200px;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191815;
+    color: #fff;
+    
+  }
+
+
+  .azul{
+    background-color: rgb(74, 146, 255);
+    color: #fff;
+  }
+
+  .azul a{
+    color: #fff;
+  }
+
+  .modoEscuro{
+    background-color: #121211;
+    
+  }
+
+  .modoEscuro .containers{
+    border: 2px solid #fff;
+  }
+
+  .modoEscuro a{
+    color: #fff;
+  }
+
+  #descricao{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+    margin: 0;
+    background-color: #444;
+    padding: 10px;
+  }
+
+  #startButton{
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: #dad6d6;
+  }
+
+  #transcription{
+    padding: 10px;
+    color: #121211;
+    background-color: #e0dcdc;
+  }
+</style>
+
+
+</head>
+<body>
+
+  <header>
+    <h1>Transcrição de áudio</h1>
+  </header>
+
+  <nav id="section-links">
+     <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Contato</a></li>
+     </ul>
+  </nav>
+
+  <section id="buttons">
+
+    <div id="button-colors">
+
+      <button class="colors" id="normal">Branco</button>
+      <button class="colors" id="black">Modo escuro</button>
+      <button class="colors" id="azul">Azul</button> 
+
+    </div>
+
+  </section>
+
+
+  <main>
+
+   <div class="section-container">
+
+    <button class="OcultarMostra"> Ocultar </button>
+
+    <section class="containers">
+
+      <a href="https://transkriptor.com/">
+
+      <h1>Softwares de Transcrição que utilizam IA.</h1>
+
+      <div class="image">
+        <img src="https://transkriptor.com/img/nav-logo.svg" alt="transkriptor">
+      </div>
+
+      <div class="descricao">
+        <p>
+          Transcreva automaticamente as suas reuniões, entrevistas, palestras, e outras conversas em Português.
+        </p>
+      </div>
+
+      </a>
+
+    </section>
+   </div>
+
+     <div class="section-container">
+    
+    <button class="OcultarMostra"> Ocultar </button>
+
+    <section class="containers">
+
+      <a href="https://miro.medium.com/v2/resize:fit:968/1*F6SrJR7_s95r6oCF3ugMZw.png">
+
+      <h1>A importância da transcrição de texto em áudio para a acessibilidade.</h1>
+
+      <div class="image">
+        <img src="https://miro.medium.com/v2/resize:fit:1358/1*jfdwtvU6V6g99q3G7gq7dQ.png" alt="medium">
+      </div>
+
+      <div class="descricao">
+        <p>
+          A transcrição de texto em áudio é uma forma de tornar o conteúdo de um site acessível a pessoas cegas. <br>
+          fonte: Medium
+        </p>
+      </div>
+
+      </a>
+
+    </section>
+
+     </div>
+
+     <div class="section-container">
+    
+      <button class="OcultarMostra"> Ocultar </button>
+  
+
+      <section class="containers">
+
+      <a href="https://www.reshape.com.br/blog/transcricao-automatica-vantagens-e-desvantagens/">
+
+      <h1>Transcrição automática: vantagens</h1>
+
+      <div class="image">
+        <img src="https://www.reshape.com.br/media/articles/transcricao-automatica-vantagens-e-desvantagens.webp" alt="transkriptor">
+      </div>
+
+      <div class="descricao">
+        <p>
+          A transcrição automática é uma tecnologia inovadora e possui diversas vantagens que podem economizar tempo e dinheiro, além de proporcionar maior precisão e eficiência.
+        </p>
+      </div>
+
+      </a>
+
+    </section>
+
+     </div>
+
+    
+  
+  </main>
+
+  <!-- Botão para iniciar/parar a transcrição. -->
+
+  <section id="descricao">
+    <button id="startButton">Iniciar Transcrição</button>
+    <div id="transcription"></div>
+  </section>
+ 
+
+
+  <footer>
+    <h3>© 2024 – Transcrição de áudio na Acessibilidade - Desenvolvido por Thomas Paim </h3>
+  </footer>
+  
+
+
+
+<!-- <footer>
+  <h2>Desenvolvido por Thomas Paim</h2>
+</footer> -->
+
+
+<!-- criação de variáveis JavaScript para elementos -->
+<script>
+  // Obtém referências para os elementos HTML relevantes
+  const transcription = document.getElementById('transcription');
+  const startButton = document.getElementById('startButton');
+
+  // Variáveis para controle do reconhecimento de fala
+  let recognizing = false; // Indica se o reconhecimento está ocorrendo
+  let finalTranscript = ''; // Armazena o texto final reconhecido
+
+  // Verifica se o navegador suporta a API de Reconhecimento de Fala
+  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+  // Verifica se a API de Reconhecimento de Fala é suportada
+  if (window.SpeechRecognition) {
+    // Cria uma instância do reconhecimento de fala
+    var recognition = new SpeechRecognition();
+    // Configurações do reconhecimento de fala
+    recognition.continuous = true; // Reconhecimento contínuo
+    recognition.interimResults = true; // Resultados intermediários
+    recognition.lang = 'pt-BR'; // Define o idioma como Português- Brasil
+
+    // Evento acionado quando o reconhecimento de fala inicia
+    recognition.onstart = function() {
+      recognizing = true; // Define que o reconhecimento está ocorrendo
+      startButton.textContent = 'Parar Transcrição'; // Atualiza o texto do botão
+    };
+
+    // Evento acionado em caso de erro durante o reconhecimento
+    recognition.onerror = function(event) {
+      console.log('Erro de reconhecimento: ' + event.error); // Registra o erro no console
+    };
+
+    // Evento acionado quando o reconhecimento de fala termina
+    recognition.onend = function() {
+      recognizing = false; // Define que o reconhecimento não está mais ocorrendo
+      startButton.textContent = 'Iniciar Transcrição'; // Atualiza o texto do botão
+    };
+
+    // Evento acionado quando resultados de reconhecimento de fala estão disponíveis
+    recognition.onresult = function(event) {   
+      let interimTranscript = ''; // Variável para transcrição intermediária
+      // Itera sobre os resultados do reconhecimento
+      for (let i = event.resultIndex; i < event.results.length; ++i) {
+        if (event.results[i].isFinal) {
+          // Se a transcrição for final, adiciona ao texto final
+          finalTranscript += event.results[i][0].transcript;
+        } else {
+          // Caso contrário, é uma transcrição intermediária
+          interimTranscript += event.results[i][0].transcript;
+        }
+      }
+      // Exibe o texto reconhecido ao usuário
+      transcription.textContent = finalTranscript + interimTranscript;
+    };
+
+    // Adiciona evento de clique ao botão de início/parada da transcrição
+    startButton.addEventListener('click', function() {
+      if (recognizing) {
+        recognition.stop(); // Para o reconhecimento se já estiver ocorrendo
+        return;
+      }
+      // Se não estiver ocorrendo, limpa o texto e inicia o reconhecimento
+      finalTranscript = '';
+      transcription.textContent = '';
+      recognition.start();
+    }, false);
+
+  } else {
+    // Se a API não é suportada, esconde o botão e exibe uma mensagem
+    startButton.style.visibility = 'hidden';
+    transcription.textContent = 'Seu navegador não suporta a API de reconhecimento de fala.';
+  }
+
+
+  const main = document.querySelector('main')
+  const modoEscuro = document.getElementById('black')
+  const modoAzul = document.getElementById('azul')
+  const modoNormal = document.getElementById('normal')
+
+  modoAzul.addEventListener('click', azul)
+  modoEscuro.addEventListener('click', escuro)
+  modoNormal.addEventListener('click', normal)
+
+  function azul(){
+    main.classList.add('azul')
+    main.classList.remove('modoEscuro')
+  }
+
+  function escuro(){
+    main.classList.add('modoEscuro')
+    main.classList.remove('azul')
+  }
+
+  function normal(){
+    main.classList.remove('modoEscuro', 'azul')
+  }
+
+
+  const btnOcultar = document.querySelectorAll('.OcultarMostra')
+
+  const containers = document.querySelectorAll('.containers')
+
+  
+   btnOcultar[0].addEventListener('click',()=>{
+     if(containers[0].style.display === 'none' ){
+      containers[0].style.display = "block";
+      btnOcultar[0].textContent = 'Ocultar'
+
+     }
+
+     else{
+      containers[0].style.display = "none"
+      btnOcultar[0].textContent = 'Mostar'
+     }
+   })
+  
+   btnOcultar[1].addEventListener('click',()=>{
+     if(containers[1].style.display === 'none' ){
+      containers[1].style.display = "block";
+       btnOcultar[1].textContent = 'Ocultar'
+     }
+
+     else{
+      containers[1].style.display = "none"
+      btnOcultar[1].textContent = 'Mostrar'
+     }
+   })
+
+   btnOcultar[2].addEventListener('click',()=>{
+     if(containers[2].style.display === 'none' ){
+      containers[2].style.display = "block";
+      btnOcultar[2].textContent = 'Ocultar'
+     }
+
+     else{
+      containers[2].style.display = "none"
+      btnOcultar[2].textContent = 'Mostrar'
+     }
+   })
+
+
+</script>
+
+</body>
+</html>
